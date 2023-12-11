@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background: url(../img/main_bg.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: #4d4e55;
+}
+main{
+    width: 250px;
+    height: 100vh;
+    background: rgb(217, 217, 219);
+}
+.count_show {
+    background: white;
+    border-radius: 15px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -2px 5px 8px 2px #bcbdc2;
+}
+.round {
+    width: 150px;
+    height: 170px;
+    border: 10px solid rgb(190, 190, 190);
+    border-radius: 100%;
+    margin: 20px;
+}
+.count_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.count_content p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.count_content p:nth-child(1){
+    font-size: 14px;
+}
+.count_content p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+}
+.jikir_box {
+    background: #f1f2f4;
+    padding: 10px;
+    padding-bottom: 75px;
+}
+.card {
+    background: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    box-shadow: 0px 0px 6px -4px #a5acd0;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.card:hover, .selected{
+    background: #bfbfbf;
+}
+.card p {
+    font-size: 16px;
+    line-height: 20px;
+}
+footer {
+    background: rgb(217, 217, 219);
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+}
+footer button {
+    background: white;
+    width: 50px;
+    height: 55px;
+    border-radius: 100%;
+    margin: 10px;
+    border: 1px solid #babbcb;
+    cursor: pointer;
+}
+footer button:nth-child(2) {
+    font-size: 50px;
+}
+footer button:active{
+    background: #bebebf;
+}
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 750px) {
+    main{
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+  }
